@@ -1,39 +1,49 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import "./Projects.css"
 
 const Projects = () => {
     return (
-        <>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+        <div className="proj-cards">
+            <Card style={{ width: '18rem',height:"350px" }} className="proj-card">
+                <Card.Img variant="top" src="images/UltimateServer.png" className="proj-img" />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Ultimate Movie (Client Side)</Card.Title>
                     <Card.Text>
                         Simple Project from React js
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <div className="proj-btn">
+                        <Button variant="outline-success">GitHub</Button>
+                        <Button variant="outline-success">URL</Button>
+                    </div>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+            <Card style={{ width: '18rem', height: "350px" }} className="proj-card">
+                <Card.Img variant="top" src="images/UltimateClient.png" className="proj-img" />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Ultimate Movie (Server Side)</Card.Title>
                     <Card.Text>
-                        Simple Project from React js
+                        Simple Project from ASP.NET CORE
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <div className="proj-btn">
+                        <Button variant="outline-success">GitHub</Button>
+                        <Button variant="outline-success">URL</Button>
+                    </div>
                 </Card.Body>
-            </Card><Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+            </Card><Card style={{ width: '18rem', height: "350px" }} className="proj-card">
+                <Card.Img variant="top" src="images/thisProject.png" className="proj-img" />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>My Portfolio</Card.Title>
                     <Card.Text>
                         Simple Project from React js
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <div className="proj-btn">
+                        <Button variant="outline-success">GitHub</Button>
+                        <Button variant="outline-success">URL</Button>
+                    </div>
                 </Card.Body>
             </Card>
-        </>
+        </div>
     )
 }
 

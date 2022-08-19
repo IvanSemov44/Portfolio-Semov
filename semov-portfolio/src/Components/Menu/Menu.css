@@ -1,0 +1,21 @@
+.nav-head{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.nav-brand{
+    padding-top: -30px;
+    color:#198754;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nav-btn{
+    margin-top: 10px;
+    margin-left: 70%;
+    display: flex;
+    gap: 30px ;
+}

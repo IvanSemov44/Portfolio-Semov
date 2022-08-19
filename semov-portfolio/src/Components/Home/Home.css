@@ -1,0 +1,20 @@
+.home{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-text{
+    margin-top: 100px;
+    margin-left:80px;
+    font-size: 35px;
+    color:rgb(39, 27, 27);
+}
+
+.home-text-header{
+    font-size: 80px;
+    color: rgb(76, 74, 209);;
+}
+
+.home-text-name{
+    color:rgb(202, 26, 40);
+}
