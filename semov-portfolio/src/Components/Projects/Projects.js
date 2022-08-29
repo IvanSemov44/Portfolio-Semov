@@ -2,11 +2,17 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./Projects.css"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+//TODO:add component Card seperet
+
 const Projects = () => {
     return (
         <div className="proj-cards">
             <Card style={{ width: '18rem', height: "350px" }} className="proj-card">
-                <Card.Img variant="top" src="images/UltimateServer.png" className="proj-img" />
+                <Card.Img variant="top" src="images/UltimateClient.png" className="proj-img" />
                 <Card.Body>
                     <Card.Title>Ultimate Movie (Client Side)</Card.Title>
                     <Card.Text>
@@ -18,15 +24,19 @@ const Projects = () => {
                             href="https://github.com/IvanSemov44/ClientUltimateMovieApp"
                             target="_blank"
                         >
-                            GitHub
+                            <FontAwesomeIcon icon={faGithub} />
+                            <span> GitHub</span>
                         </Button>
-                        <Button variant="outline-success" disabled>URL</Button>
+                        <Button variant="outline-success" disabled>
+                            <FontAwesomeIcon icon={faLink} />
+                            <span> URL</span>
+                        </Button>
                     </div>
                 </Card.Body>
             </Card>
 
             <Card style={{ width: '18rem', height: "350px" }} className="proj-card">
-                <Card.Img variant="top" src="images/UltimateClient.png" className="proj-img" />
+                <Card.Img variant="top" src="images/UltimateServer.png" className="proj-img" />
                 <Card.Body>
                     <Card.Title>Ultimate Movie (Server Side)</Card.Title>
                     <Card.Text>
@@ -38,13 +48,17 @@ const Projects = () => {
                             href="https://github.com/IvanSemov44/ServerUltimateMovieApp"
                             target="_blank"
                         >
-                            GitHub
+                            <FontAwesomeIcon icon={faGithub} />
+                            <span> GitHub</span>
                         </Button>
-                        <Button variant="outline-success" disabled>URL</Button>
+                        <Button variant="outline-success" disabled>
+                            <FontAwesomeIcon icon={faLink} />
+                            <span> URL</span>
+                        </Button>
                     </div>
                 </Card.Body>
             </Card>
-            
+
             <Card style={{ width: '18rem', height: "350px" }} className="proj-card">
                 <Card.Img variant="top" src="images/thisProject.png" className="proj-img" />
                 <Card.Body>
@@ -57,10 +71,14 @@ const Projects = () => {
                             variant="outline-success"
                             href="https://github.com/IvanSemov44/Portfolio-Semov"
                             target="_blank"
-                        >
-                            GitHub
+                        > 
+                        <FontAwesomeIcon icon={faGithub} />
+                            <span> GitHub</span>
                         </Button>
-                        <Button variant="outline-success" disabled>URL</Button>
+                        <Button variant="outline-success" disabled>
+                            <FontAwesomeIcon icon={faLink} />
+                            <span> URL</span>
+                        </Button>
                     </div>
                 </Card.Body>
             </Card>
